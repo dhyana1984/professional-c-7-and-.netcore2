@@ -1,4 +1,5 @@
 **/.DS_Store
-**/debug
-**/release
+**/obj
+**/bin
 .DS_Store
+*/.DS_Store
