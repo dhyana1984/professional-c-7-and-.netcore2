@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{A5F7824B-04D6-492D-9188-D2512ED710AF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Inherit/VirtualMethod.cs">
+    <Files>
+      <File FileName="Inherit/Program.cs" Line="14" Column="22" />
+      <File FileName="Inherit/VirtualMethod.cs" Line="36" Column="94" />
+      <File FileName="Inherit/AbstractClassAndMethod.cs" Line="26" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Inherit" expanded="True">
+            <Node name="Inherit" expanded="True">
+              <Node name="VirtualMethod.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Inherit PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
