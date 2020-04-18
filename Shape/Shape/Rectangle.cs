@@ -4,6 +4,10 @@ namespace MyShape
 {
     public class Rectangle : Shape
     {
+        public Rectangle()
+        {
+
+        }
 
         public override void Draw()
         {
@@ -11,9 +15,5 @@ namespace MyShape
             Console.WriteLine($"Rectangle with {Position} and {Size}");
         }
 
-        new public void MyMethod()
-        {
-            Console.WriteLine("New MyMethod");
-        }
     }
 }

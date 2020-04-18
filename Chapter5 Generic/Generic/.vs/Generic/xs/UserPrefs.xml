@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{C42E07AD-BE1C-4628-A74E-CBFD75D276BF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Generic/IDisplay.cs">
+    <Files>
+      <File FileName="Generic/IDisplay.cs" Line="4" Column="46" />
+      <File FileName="Generic/IIndex.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Generic" expanded="True">
+            <Node name="Generic" expanded="True">
+              <Node name="IDisplay.cs" selected="True" />
+            </Node>
+            <Node name="Shape" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Generic PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
