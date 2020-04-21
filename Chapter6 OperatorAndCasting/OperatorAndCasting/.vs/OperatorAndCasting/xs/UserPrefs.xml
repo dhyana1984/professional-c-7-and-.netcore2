@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{D9E7430F-D4A8-4D9F-A9E2-34EE14D46615}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OperatorAndCasting/Currency.cs">
+    <Files>
+      <File FileName="OperatorAndCasting/Program.cs" Line="55" Column="1" />
+      <File FileName="OperatorAndCasting/Vector.cs" Line="49" Column="48" />
+      <File FileName="OperatorAndCasting/Person.cs" Line="23" Column="6" />
+      <File FileName="OperatorAndCasting/Currency.cs" Line="6" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OperatorAndCasting" expanded="True">
+            <Node name="OperatorAndCasting" expanded="True">
+              <Node name="Currency.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.OperatorAndCasting PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
