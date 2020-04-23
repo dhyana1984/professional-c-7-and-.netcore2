@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{F08A05C3-C15E-4C8D-A50B-79AA2107D4BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "..\..\Lib\Lib\Lib.csproj", "{027DDD19-3718-4821-85D7-94E136004C9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F08A05C3-C15E-4C8D-A50B-79AA2107D4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08A05C3-C15E-4C8D-A50B-79AA2107D4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08A05C3-C15E-4C8D-A50B-79AA2107D4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08A05C3-C15E-4C8D-A50B-79AA2107D4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027DDD19-3718-4821-85D7-94E136004C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027DDD19-3718-4821-85D7-94E136004C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027DDD19-3718-4821-85D7-94E136004C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027DDD19-3718-4821-85D7-94E136004C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
