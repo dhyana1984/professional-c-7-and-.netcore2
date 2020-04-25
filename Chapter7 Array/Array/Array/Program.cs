@@ -56,6 +56,75 @@ namespace ArraySample
             {
                 Console.WriteLine(item);
             }
+            Console.WriteLine("-------IntroSpans------");
+            var span1 = IntroSpans();
+            Console.WriteLine("-------CreateSlices------");
+            var span2 = CreateSlices(span1);
+            Console.WriteLine("-------ChangeValues------");
+            ChangeValues(span1, span2);
+
+            //Span转Array
+            int[] arr = span1.ToArray();
+
         }
+
+        private static Span<int> IntroSpans()
+        {
+            int[] arr1 = { 1, 4, 5, 11, 13, 18 };
+            //使用Span直接访问数组元素
+            var span1 = new Span<int>(arr1);
+            span1[1] = 1;
+            Console.WriteLine($"arr1[1] is changed via span1[1]:{arr1[1]}");
+            return span1;
+        }
+
+        //使用span创建数组切片
+        private static Span<int> CreateSlices(Span<int> span1)
+        {
+            Console.WriteLine(nameof(CreateSlices));
+            int[] arr2 = { 3, 5, 7, 9, 11, 13, 15 };
+            var span2 = new Span<int>(arr2);
+            //利用span创建数组切片，直接访问数组不会复制数组元素
+            var span3 = new Span<int>(arr2, start: 3, length: 3);
+            //直接从span1创造新的切片
+            var span4 = span1.Slice(start: 2, length: 4);
+            DisplaySpan("Content of Span3", span3);
+            DisplaySpan("Content of Span4", span4);
+            return span2;
+        }
+
+        private static void DisplaySpan(string title, ReadOnlySpan<int> span)
+        {
+            Console.WriteLine(title);
+            for (int i = 0; i < span.Length; i++)
+            {
+                Console.Write($"{span[i]}.");
+            }
+            Console.WriteLine();
+        }
+
+        private static void ChangeValues(Span<int> span1, Span<int> span2)
+        {
+            Console.WriteLine(nameof(ChangeValues));
+            Span<int> span4 = span1.Slice(start: 4);
+            //Clear方法用0填充这个span4
+            //同时也修改了span1
+            span4.Clear();
+            DisplaySpan("Content of span1", span1);
+            Span<int> span5 = span2.Slice(start: 3, length: 3);
+            //Fill方法填充Span5
+            //同时也修改了span2
+            span5.Fill(42);
+            DisplaySpan("Content of span2", span2);
+            span5.CopyTo(span1);
+            DisplaySpan("Content of span1", span1);
+            if (!span1.TryCopyTo(span4))
+            {
+                Console.WriteLine("Cannot copy span1 to span4 because span4 is too small");
+                Console.WriteLine($"length of span4: {span4.Length}, length of span1: {span1.Length}");
+            }
+
+        }
+
     }
 }
