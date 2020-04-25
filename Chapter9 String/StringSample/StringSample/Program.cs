@@ -42,6 +42,15 @@ namespace StringSample
             Find2(text);
             Console.WriteLine("-------------");
             NamedGroups();
+
+            Console.WriteLine("------Span-------");
+            int ix = text.IndexOf("Visual");
+            //string的AsSpan()方法返回字符Span
+            ReadOnlySpan<char> spanToText = text.AsSpan();
+            ReadOnlySpan<char> slice = spanToText.Slice(start: ix, length: 13);
+            //char数组转成string
+            string newString = new String(slice.ToArray());
+            Console.WriteLine(newString);
         }
 
         public static void Find1(string text)
@@ -114,7 +123,6 @@ namespace StringSample
                 }
 
             }
-
         }
     }
 }
