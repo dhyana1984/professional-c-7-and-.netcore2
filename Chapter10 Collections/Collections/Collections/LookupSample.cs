@@ -15,7 +15,7 @@ namespace Collections
             racers.Add(new Racer(11, "Jackie", "Stewart", "United Kingdom", 27));
             racers.Add(new Racer(15, "James", "Hunt", "United Kingdom", 10));
             racers.Add(new Racer(5, "Jack", "Brabham", "Australia", 14));
-
+            //Lookup可以把键映射到一个集合，即相比Dictionary是一对一，Lookup是一对多，
             var lookupRacers = racers.ToLookup(r => r.Country);
             foreach (var r in lookupRacers["Australia"])
             {
