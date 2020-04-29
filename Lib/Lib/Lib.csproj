@@ -9,5 +9,6 @@
     <Folder Include="Employee\" />
     <Folder Include="Racer\" />
     <Folder Include="Document\" />
+    <Folder Include="AdvanceRacer\" />
   </ItemGroup>
 </Project>
