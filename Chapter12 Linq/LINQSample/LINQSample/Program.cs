@@ -6,7 +6,15 @@ namespace LINQSample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            LinqQuerySample.LINQQuery();
+            Console.WriteLine("----CompoundFromWithMethod---------");
+            LinqQuerySample.CompoundFromWithMethod();
+            Console.WriteLine("----Grouping---------");
+            LinqQuerySample.Grouping();
+            Console.WriteLine("----GroupingAndNestedObject---------");
+            LinqQuerySample.GroupingAndNestedObject();
+            Console.WriteLine("----InnerJoin---------");
+            LinqQuerySample.InnerJoin();
         }
     }
 }
