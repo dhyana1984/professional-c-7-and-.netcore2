@@ -213,6 +213,82 @@ namespace LINQSample
 
 
         }
+        //做外连接
+        public static void LeftOutJoin()
+        {
+            var racers = Formula1.GetChampions()
+            .SelectMany(r => r.Years, (r1, year) =>
+            new //这里的r1就是Formula1.GetChampions()的项，year就是r.Years的每一项
+            {
+                Year = year,
+                Name = r1.FirstName + " " + r1.LastName
+            });
+            var teams = Formula1.GetConstructorChampions()
+            .SelectMany(t => t.Years, (t, year) =>
+            new
+            {
+                Year = year,
+                t.Name
+            });
+            var racersAndTeams =
+                (from r in racers
+                 join t in teams on r.Year equals t.Year into rt
+                 from t in rt.DefaultIfEmpty()
+                 orderby r.Year
+                 select new
+                 {
+                     Year = r.Year,
+                     Champion = r.Name,
+                     Constructor = t == null ? "no constructor championshit" : t.Name
+                 }).Take(10);
+
+            racersAndTeams =
+                racers.GroupJoin(
+                    teams,
+                    r => r.Year,
+                    t => t.Year,
+                    (r, ts) => new
+                    {
+                        Year = r.Year,
+                        Champion = r.Name,
+                        Constructor = ts
+                    })
+                    .SelectMany(
+                        rt => rt.Constructor.DefaultIfEmpty(),
+                        (r, t) => new
+                        {
+                            Year = r.Year,
+                            Champion = r.Champion,
+                            Constructor = t?.Name ?? "no constructor championshit"
+                        });
+            foreach (var item in racersAndTeams)
+            {
+                Console.WriteLine($"{item.Year}: {item.Champion,-20} {item.Constructor}");
+            }
+        }
+
+        //分区
+        public static void Partitioning()
+        {
+            //每页数据条数
+            int pageSize = 5;
+            //总页数量
+            int numberPages = (int)Math.Ceiling(Formula1.GetChampions().Count() / (double)pageSize);
+            for (int page = 0; page < numberPages; page++)
+            {
+                Console.WriteLine($"Page {page}");
+                var racers = (from r in Formula1.GetChampions()
+                              orderby r.LastName, r.FirstName
+                              select r.FirstName + " " + r.LastName)
+                              .Skip(page * pageSize).Take(pageSize);
+            
+                foreach (var name in racers )
+                {
+                    Console.WriteLine(name);
+                }
+                Console.WriteLine();
+            }
+        }
     }
 
     
