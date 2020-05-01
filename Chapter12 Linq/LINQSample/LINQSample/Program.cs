@@ -15,6 +15,14 @@ namespace LINQSample
             LinqQuerySample.GroupingAndNestedObject();
             Console.WriteLine("----InnerJoin---------");
             LinqQuerySample.InnerJoin();
+            Console.WriteLine("----LeftOuyJoin---------");
+            LinqQuerySample.LeftOutJoin();
+            Console.WriteLine("----Partition---------");
+            LinqQuerySample.Partitioning();
+            Console.WriteLine("----RangeSample---------");
+            RangeSample.GetRange();
+            Console.WriteLine("----Expression---------");
+            ExpressionSample.DisplaySample();
         }
     }
 }
