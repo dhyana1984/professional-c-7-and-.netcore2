@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalPrograming", "FunctionalPrograming\FunctionalPrograming.csproj", "{E8319AFA-98CA-4F8C-8DF8-6FA645D43C84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalPrograming", "FunctionalPrograming\FunctionalPrograming.csproj", "{83599EEA-6521-4BDB-9D5C-03A2BC60FAF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8319AFA-98CA-4F8C-8DF8-6FA645D43C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8319AFA-98CA-4F8C-8DF8-6FA645D43C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8319AFA-98CA-4F8C-8DF8-6FA645D43C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8319AFA-98CA-4F8C-8DF8-6FA645D43C84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83599EEA-6521-4BDB-9D5C-03A2BC60FAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83599EEA-6521-4BDB-9D5C-03A2BC60FAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83599EEA-6521-4BDB-9D5C-03A2BC60FAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83599EEA-6521-4BDB-9D5C-03A2BC60FAF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
