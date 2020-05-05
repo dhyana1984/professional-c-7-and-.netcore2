@@ -10,6 +10,5 @@
     <Folder Include="Racer\" />
     <Folder Include="Document\" />
     <Folder Include="AdvanceRacer\" />
-    <Folder Include="Attributes\" />
   </ItemGroup>
 </Project>
