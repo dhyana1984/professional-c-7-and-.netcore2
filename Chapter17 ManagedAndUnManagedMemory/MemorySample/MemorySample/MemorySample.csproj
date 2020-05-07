@@ -6,4 +6,7 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="PointerPlayGround.cs" />
+  </ItemGroup>
 </Project>
