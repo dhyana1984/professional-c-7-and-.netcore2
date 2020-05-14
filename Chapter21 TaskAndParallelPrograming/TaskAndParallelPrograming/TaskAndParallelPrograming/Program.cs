@@ -6,7 +6,8 @@ namespace TaskAndParallelPrograming
     {
         static void Main(string[] args)
         {
-            ParallelSample.DisplaySample();
+            //ParallelSample.DisplaySample();
+            TaskSample.DisplaySample();
         }
     }
 }
