@@ -7,7 +7,10 @@ namespace TaskAndParallelPrograming
         static void Main(string[] args)
         {
             //ParallelSample.DisplaySample();
-            TaskSample.DisplaySample();
+            //TaskSample.DisplaySample();
+            //CancellationSample.DisplaySample();
+            //DataFlow.DisplaySample();
+            SimpleThreadIssue.DisplaySample();
         }
     }
 }
