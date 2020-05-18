@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAndStream", "FileAndStream\FileAndStream.csproj", "{48689E2C-65D0-45CE-8AC1-552853C6BCDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48689E2C-65D0-45CE-8AC1-552853C6BCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48689E2C-65D0-45CE-8AC1-552853C6BCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48689E2C-65D0-45CE-8AC1-552853C6BCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48689E2C-65D0-45CE-8AC1-552853C6BCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
