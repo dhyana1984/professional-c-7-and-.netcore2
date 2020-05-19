@@ -6,7 +6,9 @@ namespace FileAndStream
     {
         static void Main(string[] args)
         {
-            FileNameAndDirectorySample.DisplaySample();
+            //FileNameAndDirectorySample.DisplaySample();
+            FileWatcherSample.WatchFiles("/Users/yxiong/Desktop", "*.md");
+            Console.ReadLine();
         }
     }
 }
