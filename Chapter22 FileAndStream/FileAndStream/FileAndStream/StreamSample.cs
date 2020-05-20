@@ -131,6 +131,16 @@ namespace FileAndStream
                 } while (!completed);
             }
         }
+        //简单复制流
+        public static void CopyUsingStreams2(string inputFile, string outputFile)
+        {
+            using (var inputStream = File.OpenRead(inputFile))
+            using (var outputStream = File.OpenWrite(outputFile))
+            {
+                //直接使用CopyTo复制流
+                inputStream.CopyTo(outputStream);
+            }
+        }
 
         public static void ShowStreamInformation(Stream stream)
         {
