@@ -41,6 +41,22 @@ namespace NetWorkSample
             }
         }
 
+        private static async Task GetDataAdvancedAsync()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, NorthwindUrl);
+
+            //使用HttpClient.SendAsync可以传入HttpRequestMessage对象，自定义request信息
+            HttpResponseMessage response = await HttpClient.SendAsync(request);
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Response Status Code: {(int)response.StatusCode} {response.ReasonPhrase}");
+                string responseBodyAsText = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Received payload of {responseBodyAsText.Length} characters");
+                Console.WriteLine();
+                Console.WriteLine(responseBodyAsText);
+            }
+        }
+
         private static async Task GetDataWithExceptionsAsync()
         {
             try
@@ -103,6 +119,8 @@ namespace NetWorkSample
                 Console.WriteLine($"{ex.Message}");
             }
         }
+
+
 
         //自定义请求
         public class SampleMessageHandler : HttpClientHandler
