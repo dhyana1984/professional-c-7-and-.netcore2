@@ -53,12 +53,14 @@ namespace SecuritySample
             }
             //验证用户是否属于内置角色User和Administrator
             //WindowsBuiltInRole是角色字符串的枚举
+            //通过判断角色可以控制用户的访问权限
             Console.WriteLine($"Users? {principal.IsInRole(WindowsBuiltInRole.User)}");
             Console.WriteLine($"Administrators? {principal.IsInRole(WindowsBuiltInRole.Administrator)}");
             Console.WriteLine();
             return principal;
         }
 
+        //Claims提供了比角色更大的灵活性，来自关于标识的权威机构
         public static void ShowClaims(IEnumerable<Claim> claims)
         {
             Console.WriteLine("Claims");
