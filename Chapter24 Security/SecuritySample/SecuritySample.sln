@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecuritySample", "SecuritySample\SecuritySample.csproj", "{311B0C90-AB4F-4E83-BC44-AB87D8F3A0B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{311B0C90-AB4F-4E83-BC44-AB87D8F3A0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311B0C90-AB4F-4E83-BC44-AB87D8F3A0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311B0C90-AB4F-4E83-BC44-AB87D8F3A0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{311B0C90-AB4F-4E83-BC44-AB87D8F3A0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
