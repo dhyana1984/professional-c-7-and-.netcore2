@@ -28,6 +28,7 @@ namespace NetworkSample
 
                 do
                 {
+                    //listener.AcceptAsync()监听访问Server的请求
                     using (RequestContext context = await listener.AcceptAsync())
                     {
                         context.Response.Headers.Add("content-type", new string[] { "text/html" });
