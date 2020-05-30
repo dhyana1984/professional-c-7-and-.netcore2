@@ -11,7 +11,8 @@ namespace CommandSample
         {
             //ExecuteNonQuery();
             //ExecuteScalar();
-            ExecuteReader("");
+            //ExecuteReader("");
+            StoredProcedure("TestPublisher");
         }
 
         static void CreateCommand()
@@ -115,6 +116,39 @@ namespace CommandSample
                     //使用IsDBNull判断是否为空
                     DateTime? releaseDate = reader.IsDBNull(3) ? (DateTime?)null : reader.GetDateTime(3);
                     Console.WriteLine($"{id,5}. {bookTitle,-40} {publisher,-15} {releaseDate:d}");
+                }
+            }
+        }
+
+        //调用存储过程
+        static void StoredProcedure(string publisher)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = connection.CreateCommand();
+                //command.CommandText传入存储过程名称
+                command.CommandText = "[ProCSharp].[GetBooksByPublisher]";
+                //command.CommandType选择CommandType.StoredProcedure
+                command.CommandType = CommandType.StoredProcedure;
+
+                //这里是使用command.CreateParameter()创建SqlParameter对象
+                SqlParameter p1 = command.CreateParameter();
+                p1.SqlDbType = SqlDbType.NVarChar;
+                p1.ParameterName = "@Publisher";
+                p1.Value = publisher;
+                command.Parameters.Add(p1);
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        //使用列名索引的方式读取数据
+                        int id = (int)reader["Id"];
+                        string title = (string)reader["Title"];
+                        string pub = (string)reader["Publisher"];
+                        DateTime releaseDate = (DateTime)reader["ReleaseDate"];
+                        Console.WriteLine($"{title} - {pub}; {releaseDate:d}");
+                    }
                 }
             }
         }
