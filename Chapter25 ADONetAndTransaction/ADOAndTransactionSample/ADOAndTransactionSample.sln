@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOAndTransactionSample", "ADOAndTransactionSample\ADOAndTransactionSample.csproj", "{7B40D79E-A566-471C-91ED-64FD07712C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionSample", "ConnectionSample\ConnectionSample.csproj", "{212BDF7F-CA1F-4281-83B0-5C1CC58A3FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandSample", "CommandSample\CommandSample.csproj", "{B45E390E-93CC-49F2-AD7E-87D6F89E044B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B40D79E-A566-471C-91ED-64FD07712C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B40D79E-A566-471C-91ED-64FD07712C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B40D79E-A566-471C-91ED-64FD07712C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B40D79E-A566-471C-91ED-64FD07712C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212BDF7F-CA1F-4281-83B0-5C1CC58A3FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212BDF7F-CA1F-4281-83B0-5C1CC58A3FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212BDF7F-CA1F-4281-83B0-5C1CC58A3FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212BDF7F-CA1F-4281-83B0-5C1CC58A3FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45E390E-93CC-49F2-AD7E-87D6F89E044B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45E390E-93CC-49F2-AD7E-87D6F89E044B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45E390E-93CC-49F2-AD7E-87D6F89E044B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45E390E-93CC-49F2-AD7E-87D6F89E044B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

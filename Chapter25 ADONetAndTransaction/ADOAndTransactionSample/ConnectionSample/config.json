@@ -1,0 +1,7 @@
+﻿{
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "server=192.168.1.7\\SQLEXPRESS; User Id=sa;Password=xiongyi1984; database=Books;Trusted_Connection=True"
+    }
+  }
+}
