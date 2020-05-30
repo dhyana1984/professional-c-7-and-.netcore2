@@ -6,7 +6,7 @@ namespace ADOAndTransaction
     {
         static void Main(string[] args)
         {
-           
+            ConnectionSample.RunSample();
         }
     }
 }
