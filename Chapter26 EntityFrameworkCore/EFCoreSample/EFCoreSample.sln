@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreLib", "EFCoreLib\EFCoreLib.csproj", "{C6BFA402-0F98-431E-90EB-B59E2FC71752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro", "Intro\Intro.csproj", "{50E79BE2-8C09-4F0B-A15F-2CFDB767BF28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingDependencyInjection", "UsingDependencyInjection\UsingDependencyInjection.csproj", "{ACD50151-EE5F-4D58-A024-8B40140A0C36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6BFA402-0F98-431E-90EB-B59E2FC71752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BFA402-0F98-431E-90EB-B59E2FC71752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BFA402-0F98-431E-90EB-B59E2FC71752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BFA402-0F98-431E-90EB-B59E2FC71752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E79BE2-8C09-4F0B-A15F-2CFDB767BF28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E79BE2-8C09-4F0B-A15F-2CFDB767BF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E79BE2-8C09-4F0B-A15F-2CFDB767BF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E79BE2-8C09-4F0B-A15F-2CFDB767BF28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD50151-EE5F-4D58-A024-8B40140A0C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD50151-EE5F-4D58-A024-8B40140A0C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD50151-EE5F-4D58-A024-8B40140A0C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD50151-EE5F-4D58-A024-8B40140A0C36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
