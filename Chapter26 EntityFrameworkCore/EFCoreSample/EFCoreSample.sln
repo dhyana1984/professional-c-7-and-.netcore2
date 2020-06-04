@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuSample", "MenuSample\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSample", "BookSample\BookSample.csproj", "{F7D743B4-CB44-453D-8692-E3B9DEBEFC4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationUsingConventions", "RelationUsingConventions\RelationUsingConventions.csproj", "{0B0D2FED-E846-432B-ADC6-7C5313EE56CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationUsingAnnotations", "RelationUsingAnnotations\RelationUsingAnnotations.csproj", "{8342E2AE-8D58-4047-AD22-731C02644AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationUsingFluentAPI", "RelationUsingFluentAPI\RelationUsingFluentAPI.csproj", "{61ED4EFE-1592-4C50-B780-C3E310A49336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,5 +43,17 @@ Global
 		{F7D743B4-CB44-453D-8692-E3B9DEBEFC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7D743B4-CB44-453D-8692-E3B9DEBEFC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7D743B4-CB44-453D-8692-E3B9DEBEFC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0D2FED-E846-432B-ADC6-7C5313EE56CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0D2FED-E846-432B-ADC6-7C5313EE56CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0D2FED-E846-432B-ADC6-7C5313EE56CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0D2FED-E846-432B-ADC6-7C5313EE56CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8342E2AE-8D58-4047-AD22-731C02644AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8342E2AE-8D58-4047-AD22-731C02644AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8342E2AE-8D58-4047-AD22-731C02644AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8342E2AE-8D58-4047-AD22-731C02644AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61ED4EFE-1592-4C50-B780-C3E310A49336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61ED4EFE-1592-4C50-B780-C3E310A49336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61ED4EFE-1592-4C50-B780-C3E310A49336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61ED4EFE-1592-4C50-B780-C3E310A49336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
