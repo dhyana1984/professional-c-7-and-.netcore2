@@ -52,7 +52,7 @@ namespace BookSample
             //定义shadow properties
             modelBuilder.Entity<Book>().Property<bool>(IsDeleted);
             modelBuilder.Entity<Book>().Property<DateTime>(LastUpdated);
-            //定义global filter，检查IsDeleted
+            //定义global filter，检查IsDeleted，只返回isdelete = false的值，此时所有查询都会带上where IsDeleted!=0
             modelBuilder.Entity<Book>().HasQueryFilter(b => !EF.Property<bool>(b, IsDeleted));
         }
 
