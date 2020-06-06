@@ -198,6 +198,7 @@ namespace MenuSample
                         Text = $"$menu {x}",
                         Price = 9.9m
                     });
+                    //这是一个批处理，一次性插入100条数据
                     context.Menus.AddRange(menus);
                     Stopwatch stopwatch = Stopwatch.StartNew();
                     int record = context.SaveChanges();
