@@ -14,7 +14,10 @@ namespace MenuSample
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(ConnectionString);
+            optionsBuilder
+                .UseSqlServer(ConnectionString);
+                //, options => options.MaxBatchSize(1)); //将MaxBatchSize设置成1来禁用批处理
+                //.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);//全局定义跟踪行为
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
