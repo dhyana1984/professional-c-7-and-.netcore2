@@ -11,9 +11,9 @@ namespace MenuSample
     {
         static async Task Main(string[] args)
         {
-            //await DeleteDatabase();
-            //await CreateDatabase();
-            //AddRecords();
+            await DeleteDatabase();
+            await CreateDatabase();
+            AddRecords();
             //ObjectTracking();
             //UpdateRecords();
             //ChangeUntracked();

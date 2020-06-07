@@ -23,6 +23,8 @@ namespace MenuSample
             builder.HasOne(m => m.MenuCard)
                 .WithMany(m => m.Menus)
                 .HasForeignKey(m => m.MenuCardId);
+
+            builder.Property(m => m.Allergens).HasMaxLength(30);
         }
     }
 }
