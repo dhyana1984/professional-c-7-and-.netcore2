@@ -19,6 +19,8 @@ namespace MenuSample
 
         public MenuCard MenuCard { get; set; }
 
+        public string Allergens { get; set; }
+
         public override string ToString()
         {
             return Text;

@@ -17,6 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationUsingAnnotations", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationUsingFluentAPI", "RelationUsingFluentAPI\RelationUsingFluentAPI.csproj", "{61ED4EFE-1592-4C50-B780-C3E310A49336}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConflictHandlingSample", "ConflictHandlingSample\ConflictHandlingSample.csproj", "{373AEE3B-FEB8-48EB-9EE5-56A8B7D0DC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionSample", "TransactionSample\TransactionSample.csproj", "{3372EC09-AEBD-47EE-A45F-24588ED0D1F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationsWebApp", "MigrationsWebApp\MigrationsWebApp.csproj", "{B98B656C-8F9D-4B33-9824-E02A0D4C5F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,5 +61,17 @@ Global
 		{61ED4EFE-1592-4C50-B780-C3E310A49336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61ED4EFE-1592-4C50-B780-C3E310A49336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61ED4EFE-1592-4C50-B780-C3E310A49336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373AEE3B-FEB8-48EB-9EE5-56A8B7D0DC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373AEE3B-FEB8-48EB-9EE5-56A8B7D0DC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373AEE3B-FEB8-48EB-9EE5-56A8B7D0DC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373AEE3B-FEB8-48EB-9EE5-56A8B7D0DC41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3372EC09-AEBD-47EE-A45F-24588ED0D1F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3372EC09-AEBD-47EE-A45F-24588ED0D1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3372EC09-AEBD-47EE-A45F-24588ED0D1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3372EC09-AEBD-47EE-A45F-24588ED0D1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98B656C-8F9D-4B33-9824-E02A0D4C5F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98B656C-8F9D-4B33-9824-E02A0D4C5F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98B656C-8F9D-4B33-9824-E02A0D4C5F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98B656C-8F9D-4B33-9824-E02A0D4C5F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
