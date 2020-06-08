@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingSamples", "UnitTestingSamples\UnitTestingSamples.csproj", "{34C6B533-ABF6-4A26-8890-2BD017A91B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingSamples.MSTests", "UnitTestingSamples.MSTests\UnitTestingSamples.MSTests.csproj", "{125F80DD-583D-4DF8-8FDA-B3D1889B5B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingSamples.xUnit.Tests", "UnitTestingSamples.xUnit.Tests\UnitTestingSamples.xUnit.Tests.csproj", "{AD33D58D-3510-4337-AB81-416E9E4C98B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34C6B533-ABF6-4A26-8890-2BD017A91B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C6B533-ABF6-4A26-8890-2BD017A91B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C6B533-ABF6-4A26-8890-2BD017A91B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C6B533-ABF6-4A26-8890-2BD017A91B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125F80DD-583D-4DF8-8FDA-B3D1889B5B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125F80DD-583D-4DF8-8FDA-B3D1889B5B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125F80DD-583D-4DF8-8FDA-B3D1889B5B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125F80DD-583D-4DF8-8FDA-B3D1889B5B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD33D58D-3510-4337-AB81-416E9E4C98B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD33D58D-3510-4337-AB81-416E9E4C98B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD33D58D-3510-4337-AB81-416E9E4C98B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD33D58D-3510-4337-AB81-416E9E4C98B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
