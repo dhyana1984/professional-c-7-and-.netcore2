@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebSampleApp.Controllers;
+using WebSampleApp.Middleware;
 
 namespace WebSampleApp
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+        //通过构造函数获取configuration，使用configuration可以访问appsettings.json内容
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
         //在依赖注入容器中配置服务
         //IServiceCollection包含Main方法中已注册的所有服务，并允许添加其他服务
         //因为派生于IList<T>，使用ServiceDescriptor作为泛型参数，所以可以改变和添加服务
@@ -22,6 +31,10 @@ namespace WebSampleApp
             services.AddTransient<ISampleService, DefaultSampleService>();
             //注册HomeController
             services.AddTransient<HomeController>();
+            services.AddDistributedMemoryCache();
+            //添加session服务，options可设置session过期时间和cookie选项
+            services.AddSession(options => options.IdleTimeout = TimeSpan.FromMinutes(10));
+            services.AddTransient<ConfigurationSample>();
         }
 
         //通过依赖注入接收参数
@@ -35,6 +48,47 @@ namespace WebSampleApp
             {
                 app.UseDeveloperExceptionPage();
             }
+
+
+            //再写入任何响应之前，需要调用UseSession
+            app.UseSession();
+
+            //自定义的中间件
+            app.UseHeaderMiddleware();
+
+            PathString remainingPath;
+            //out remainingPath是MapWhen中/Configuration后面的路径赋值给remainingPath，然后在下面逻辑判断具体去哪一个页面
+            app.MapWhen(context => context.Request.Path.StartsWithSegments("/Configuration", out remainingPath), configurationApp =>
+            {
+                configurationApp.Run(async context =>
+                {
+                    var configSample = app.ApplicationServices.GetService<ConfigurationSample>();
+                    if (remainingPath.StartsWithSegments("/appsettings"))
+                    {
+                        await configSample.ShowApplicationSettingsAsync(context);
+                    }
+                    else if (remainingPath.StartsWithSegments("/colons"))
+                    {
+                        await configSample.ShowApplicationSettingsUsingColonsAsync(context);
+                    }
+                    else if (remainingPath.StartsWithSegments("/database"))
+                    {
+                        await configSample.ShowConnectionStringSettingAsync(context);
+                    }
+                    else if (remainingPath.StartsWithSegments("/stronglytyped"))
+                    {
+                        await configSample.ShowApplicationSettingsStronglyTyped(context);
+                    }
+                });
+            });
+
+            app.Map("/Session", sessionApp =>
+            {
+                sessionApp.Run(async context =>
+                {
+                    await SessionSample.SessionAsync(context);
+                });
+            });
 
             app.Map("/Home", homeApp =>
             {
