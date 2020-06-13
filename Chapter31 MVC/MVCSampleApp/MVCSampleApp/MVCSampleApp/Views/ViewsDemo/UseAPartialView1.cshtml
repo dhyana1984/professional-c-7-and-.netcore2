@@ -1,0 +1,12 @@
+﻿@using MVCSampleApp.Models
+@model EventsAndMenusContext
+@{
+    ViewBag.Title = "Use a Partial View";
+    ViewBag.EventsTitle = "Live Events";
+}
+<h2>Use a Partial View</h2>
+<div>this is the main view</div>
+<div>
+    @*直接加载PartialView视图*@
+    @await Html.PartialAsync("ShowEvents", Model.Events) 
+</div>

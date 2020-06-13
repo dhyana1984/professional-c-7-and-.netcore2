@@ -1,0 +1,5 @@
+﻿@inject ISampleService sampleService
+<p>
+    @*使用inject关键字直接向View里面依赖注入 *@
+    @string.Join(" * ", sampleService.GetSampleStrings())
+</p>
