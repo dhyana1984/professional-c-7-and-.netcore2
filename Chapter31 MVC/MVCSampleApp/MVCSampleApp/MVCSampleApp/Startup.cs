@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MVCSampleApp.Models;
+using MVCSampleApp.Services;
 
 namespace MVCSampleApp
 {
@@ -27,7 +29,9 @@ namespace MVCSampleApp
             //services.AddControllersWithViews();
             //如果使用app.UseMvcWithDefaultRoute和app.UseMvc的话，需要关闭EnableEndpointRouting
             services.AddMvc(option => option.EnableEndpointRouting = false);
-            
+            services.AddScoped<EventsAndMenusContext>();
+            services.AddSingleton<ISampleService, SampleService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

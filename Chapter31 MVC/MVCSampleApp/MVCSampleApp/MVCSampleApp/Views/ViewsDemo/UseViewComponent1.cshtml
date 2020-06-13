@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "View Components Sample";
+}
+<h2>@ViewBag.Title</h2>
+<p>
+    @*Component.InvokeAsync调用视图组件时，参数需要使用Dictionary<string, object>，其中键值匹配参数名*@
+    @await Component.InvokeAsync("EventList", new Dictionary<string, object>()
+    {
+        ["from"] = new DateTime(2018, 4, 1),
+        ["to"] = new DateTime(2018, 4, 20)
+    })
+</p>

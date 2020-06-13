@@ -1,0 +1,8 @@
+﻿@addTagHelper *, MVCSampleApp
+@{
+    ViewBag.Title = "View Components Sample";
+}
+<h2>@ViewBag.Title</h2>
+@*使用TagHelper，可以直接用<vc />来调用视图组件，参数名直接就是属性名*@
+@*视图组件名称EventList写成了event-list*@
+<vc:event-list from="@new DateTime(2018, 4, 15)" to="@new DateTime(2018, 4, 20)" />
