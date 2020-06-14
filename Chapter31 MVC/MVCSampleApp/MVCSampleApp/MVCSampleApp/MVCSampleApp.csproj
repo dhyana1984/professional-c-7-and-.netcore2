@@ -10,6 +10,7 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\EventList\" />
     <Folder Include="Services\" />
+    <Folder Include="Views\SubmitData\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\ViewsDemo\Index.cshtml" />
