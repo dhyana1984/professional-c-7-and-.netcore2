@@ -11,6 +11,10 @@
     <Folder Include="Views\Shared\Components\EventList\" />
     <Folder Include="Services\" />
     <Folder Include="Views\SubmitData\" />
+    <Folder Include="Views\HtmlHelpers\" />
+    <Folder Include="Extentions\" />
+    <Folder Include="Views\TagHelpers\" />
+    <Folder Include="TagHelperSamples\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\ViewsDemo\Index.cshtml" />
@@ -18,5 +22,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="jQuery" Version="3.5.1" />
+    <PackageReference Include="Markdig" Version="0.20.0" />
   </ItemGroup>
 </Project>
