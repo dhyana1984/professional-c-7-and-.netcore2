@@ -1,0 +1,11 @@
+﻿@model MVCSampleApp.Models.Menu
+@{
+    ViewBag.Title = "Label Tag Helper";
+}
+<h2>@ViewBag.Title</h2>
+@*label的asp-for用来显示Model的属性名称*@
+<label asp-for="Text"></label>
+<br />
+<label asp-for="Price"></label>
+<br />
+<label asp-for="Date"></label>

@@ -1,0 +1,12 @@
+﻿@model MVCSampleApp.Models.Menu
+@{
+    ViewBag.Title = "HelperWithMenu";
+}
+<h2>Helper with Menu</h2>
+@*Html.DisplayName返回括号里面的字符串*@
+@Html.DisplayName("Text:")
+@*Html.Display传入model的属性值*@
+@Html.Display("Text")
+<br />
+@Html.DisplayName("Category:")
+@Html.Display("Category")

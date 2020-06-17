@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MVCSampleApp.Models
 {
-    //使用ModelMetadataType(typeof(MenuMetadata))将MenuMetadata连接到Menu
+    //使用ModelMetadataType(typeof(MenuMetadata))将MenuMetadata连接到Menu，从而对Menu的属性加Attribute
     //假设Menu不能被修改，此处就用partial class来修饰Meunu，即可达到目的
     [ModelMetadataType(typeof(MenuMetadata))]
     public partial class Menu
